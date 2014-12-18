@@ -2,6 +2,7 @@
 //include the database class
 require 'con.php';
 require 'utils.php';
+require 'const.php';
 session_name('barter');
 session_start();
 
@@ -49,9 +50,9 @@ if (isset($_SESSION['uid']))
 	$last_login = date('d-m-Y H:i:s', $last_login); 
 
 	//echo $page;
-	if ($page == 'http://barterproject.org/dashboard/')
+	if ($page == BASE_URL . '/dashboard/')
 	{
-		header('Location: http://barterproject.org/dashboard/signin.php');
+		header('Location: ' . BASE_URL . '/dashboard/signin.php');
 	}
 	/*else if  ($page == 'http://barterproject.org/dashboard/dashboard.php')
 	{
@@ -64,17 +65,17 @@ if (isset($_SESSION['uid']))
 }
 else
 {
-	if ($page == 'http://barterproject.org/dashboard/')
+	if ($page == BASE_URL . '/dashboard/')
 	{
 		//echo "here1 ".$page;
 	}
-	else if  ($page == 'http://barterproject.org/dashboard/signin.php')
+	else if  ($page == BASE_URL . '/dashboard/signin.php')
 	{
 		//echo "here2 ".$page;
 	}
     else
     {
-   		 header('Location: http://barterproject.org/dashboard/signin.php');
+   		 header('Location: ' . BASE_URL . '/dashboard/signin.php');
     }
 }
 

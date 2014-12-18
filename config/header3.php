@@ -1,5 +1,7 @@
 <?php 
 
+include_once( 'const.php');
+
 echo '
 
  <div class="navbar-header">
@@ -9,7 +11,7 @@ echo '
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-           <a href="dashboard.php"><img src="http://barterproject.org/wp-content/uploads/2013/06/final_logo_full.png" alt="logo" height="80px" id="logo" /></a>
+           <a href="dashboard.php"><img src="' . BASE_URL . '/wp-content/uploads/2013/06/final_logo_full.png" alt="logo" height="80px" id="logo" /></a>
         </div>
         <ul class="nav navbar-nav pull-right hidden-xs">
            

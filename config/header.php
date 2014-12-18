@@ -1,5 +1,7 @@
 <?php
-echo '<div id="header_img"><a href="http://barterproject.org/"><img src="http://barterproject.org/wp-content/uploads/2013/06/final_logo_full.png" alt="logo" id="logo" /></a></div>
+
+include_once( 'const.php');
+echo '<div id="header_img"><a href="' . BASE_URL . '"><img src="' . BASE_URL . 'images/pear_logo.png" alt="logo" id="logo" /></a></div>
 <div class="header_container">
 
       <div class="navbar">
@@ -17,12 +19,12 @@ echo '<div id="header_img"><a href="http://barterproject.org/"><img src="http://
           <div class="nav-collapse navbar-responsive-collapse collapse">
 		  <a class="navbar-brand" href="#"></a>
             <ul class="nav navbar-nav dropdown">
-              <li><a href="http://barterproject.org/blog/">Blog</a></li>
-              <li><a href="http://barterproject.org/work/">What we working on?</a></li>
-              <li><a href="http://barterproject.org/about/get-involved/">Get Involved</a></li>
-			   <li><a href="http://barterproject.org/contact/">Contact</a></li>
-			    <li><a title="log-in" href="http://barterproject.org/registration/">Sign up</a></li>
-              <li><a title="log-in" href="http://barterproject.org/portal/">Log in</a></li>
+              <li><a href="' . BASE_URL . '/blog/">Blog</a></li>
+              <li><a href="' . BASE_URL . '/work/">What we working on?</a></li>
+              <li><a href="' . BASE_URL . '/about/get-involved/">Get Involved</a></li>
+			   <li><a href="' . BASE_URL . '/contact/">Contact</a></li>
+			    <li><a title="log-in" href="' . BASE_URL . '/registration/">Sign up</a></li>
+              <li><a title="log-in" href="' . BASE_URL . '/portal/">Log in</a></li>
             </ul>
 
           </div><!-- /.nav-collapse -->

@@ -30,13 +30,15 @@ $stmt->fetch(PDO::FETCH_BOUND);
 
 //found the user	
 $ajax_response = false;
-$url = "http://barterproject.org/";
+
+require '../../config/const.php';
+$url = BASE_URL;
 
 	if($row == 1){ 
 	
 		if ($is_trader == '1')
 		{
-			$url = "http://barterproject.org/dashboard/signin.php";
+			$url = BASE_URL . "/dashboard/signin.php";
 			$status = 1;
 			$success_message = "Great you are all setup now, please feel free to login and explore project BARTER";
 		}else{

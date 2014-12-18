@@ -1,6 +1,7 @@
 <?php
 //include the database class
 require '../config/con.php';
+require '../config/const.php';
 
 //get the consumer_rfid from the databas
 $stmt = DB::get()->prepare("SELECT user_id, user_name, user_card_id, user_pass FROM tbl_users WHERE pass_key=:id LIMIT 1");
@@ -19,7 +20,7 @@ $stmt->bindColumn('user_pass', $password);
 $stmt->fetch(PDO::FETCH_BOUND);
 if ($row != 1)
 {
-	echo '<script>window.location = "http://barterproject.org"</script>';
+	echo '<script>window.location = "' . BASE_URL . '</script>';
 }
 /*while ($row = $stmt->fetch(PDO::FETCH_BOUND)) {
       $data = $name . "\t" . $colour . "\t" . $cals . "\n";
@@ -72,7 +73,7 @@ if ($row != 1)
 						
 						if(received_data.response == true){
 							alert(received_data.message);
-							window.location = "http://barterproject.org/portal"
+							window.location = BASE_URL . "/portal"
 						}
 						
 				}
@@ -125,7 +126,7 @@ if ($row != 1)
               <div class="col-lg-10">
               		<label for="card_id">Enter the digits shown on your BARTER card <a class="hover_span">help
                     <div class="hover_content"><p>You need to type in here all the digits of your card number with no spaces.</p>
-                    <img src='http://barterproject.org/images/card_example.png' alt='logo' class="card_exmaple"/></div></a>
+                    <img src="<?=BASE_URL?>/images/card_example.png" alt='logo' class="card_exmaple"/></div></a>
                 		<input id="card_id" name="card_id" type="text" placeholder="for example: 0462478AF52680" class="form-control" required maxlength="20">
                 	</label>
                 <p class="help-block"></p>

@@ -18,9 +18,11 @@ $stmt->bindColumn('user_card_id', $card_id);
 $stmt->bindColumn('user_pass', $password);
 $stmt->fetch(PDO::FETCH_BOUND);
 
+require '../config/const.php';
+
 if ($row != 1)
 {
-	echo '<script>window.location = "http://barterproject.org"</script>';
+	echo '<script>window.location = "' . BASE_URL . '"</script>';
 }
 /*while ($row = $stmt->fetch(PDO::FETCH_BOUND)) {
       $data = $name . "\t" . $colour . "\t" . $cals . "\n";

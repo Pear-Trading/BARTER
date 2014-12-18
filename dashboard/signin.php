@@ -36,7 +36,7 @@
 
 
     <div class="login-wrapper">
-      <a href="http://barterproject.org/"><img src="http://barterproject.org/wp-content/uploads/2013/06/final_logo_full.png" alt="logo" id="logo" /></a><br /><br />
+        <a href="http://barterproject.org/"><img src="<?=BASE_URL?>/pear_logo.png" alt="logo" id="logo" /></a><br /><br />
 
         <div class="box">
             <div class="content-wrap">
