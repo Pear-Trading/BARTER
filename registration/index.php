@@ -1,5 +1,6 @@
 <?php
 require '../config/con.php';
+require '../config/const.php';
 require '../config/utils.php';
 ?>
 <!DOCTYPE html>
@@ -167,7 +168,7 @@ require '../config/utils.php';
 						
 						if(received_data.response == true){
 							//alert(received_data.message);
-							window.location = "http://barterproject.org";
+                            window.location = "<?=BASE_URL?>;
 						}
 					}
 				  });
@@ -194,8 +195,25 @@ require '../config/utils.php';
     
      <div class="container">
 
-	  <h2>Registration</h2>
-      <p class="lead">Registration details for both traders and consumers</p>
+      <h2>Please register your Pear Card Here</h2>
+
+<p>Welcome to Pear Card!
+Pear Trading Ltd is a local initiative designed to collect local trading data in order to inform both citizens and businesses as to where there money goes and how it flows. The aim is to provide general feedback to the community so we can work together to keep as much of our money in the local economy as possible.</p>
+<p>
+To achieve this we have created a local loyalty card, which you have now decided to register.
+</p>
+<p>
+To help us with this we need some details from you. We don't require your life-story (you have probably already given that to other social media platforms) Just some minimum basic generic information for the system along with your name and card number so we can create an account for you.
+
+</p>
+<p>
+We promise we will not share your personally identifiable data with any third parties. As a business member people obviously need to know how to identify you so they can use your services. Beyond that we will leave it to both citizens and businesses how much they reveal about themselves as the social and interactive aspects of the Pear Trading platform grows.
+</p>
+<p>
+Michael Hallam
+</p>
+<p>
+System coordinator</p>
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/6cECJY7bUzg" frameborder="0" allowfullscreen></iframe>
      
