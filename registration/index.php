@@ -231,9 +231,9 @@ System coordinator</p>
             <div class="form-group control-group">
               <label class="control-label col-lg-2" for="card_id">Card ID:</label>
               <div class="col-lg-10">
-              		<label for="card_id">Enter the digits shown on your BARTER card <a class="hover_span">help
+              		<label for="card_id">Please enter the ID shown on your Pear card <a class="hover_span">help
                     <div class="hover_content"><p>You need to type in here all the digits of your card number with no spaces.</p>
-                    <img src='http://barterproject.org/images/card_example.png' alt='logo' class="card_exmaple"/></div></a>
+                    <img src="<?=BASE_URL?>/images/card_example.png" alt='logo' class="card_exmaple"/></div></a>
                 		<input id="card_id" name="card_id" style="text-transform:uppercase" type="text" placeholder="0462478AF52680" class="form-control" required data-validation-ajax-ajax="php/check_rfid.php" maxlength="20">
                 	</label>
                 <p class="help-block"></p>
@@ -722,7 +722,7 @@ System coordinator</p>
                   <div class="col-lg-10 controls">
                       <label for="terms-and-conditions">
                       	<input type="checkbox"  name="terms-and-conditions" required data-validation-required-message="You must agree to the terms and conditions">
-                     	I agree to the <a href="http://barterproject.org/tc/" target="_blank">terms and conditions</a>
+                        I agree to the <a href="<?=BASE_URL?>/tc/" target="_blank">terms and conditions</a>
                      </label>
                     <p class="help-block"></p>
                   </div>
